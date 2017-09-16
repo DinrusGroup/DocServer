@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8DAB6DDA-2038-400D-B3DA-86CE41627A0F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BestCS.DocNet</RootNamespace>
+    <AssemblyName>BestCS.DocNet</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NoWin32Manifest>False</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\BitAccess.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\BitSet.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\CvInfo.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\DataStream.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\DbiDbgHdr.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\DbiHeader.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\DbiModuleInfo.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\DbiSecCon.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\Interfaces.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\IntHashTable.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\MsfDirectory.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\PdbConstant.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\PdbDebugException.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\PdbException.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\PdbFile.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\PdbFileHeader.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\PdbFunction.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\PdbLine.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\PdbLines.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\PdbReader.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\PdbScope.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\PdbSlot.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\PdbSource.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\PdbTokenLine.cs" />
+    <Compile Include="Cecil\Microsoft.Cci.Pdb\SourceLocationProvider.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Cil\Code.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Cil\CodeReader.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Cil\CodeWriter.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Cil\Document.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Cil\ExceptionHandler.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Cil\ILProcessor.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Cil\Instruction.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Cil\MethodBody.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Cil\OpCode.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Cil\OpCodes.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Cil\SequencePoint.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Cil\Symbols.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Cil\VariableDefinition.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Cil\VariableReference.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Mdb\MdbReader.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Mdb\MdbWriter.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Metadata\BlobHeap.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Metadata\Buffers.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Metadata\CodedIndex.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Metadata\ElementType.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Metadata\GuidHeap.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Metadata\Heap.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Metadata\MetadataToken.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Metadata\Row.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Metadata\StringHeap.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Metadata\TableHeap.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Metadata\TokenType.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Metadata\UserStringHeap.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Metadata\Utilities.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Pdb\ISymUnmanagedDocumentWriter.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Pdb\ISymUnmanagedWriter2.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Pdb\ModuleMetadata.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Pdb\PdbHelper.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Pdb\PdbReader.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Pdb\PdbWriter.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Pdb\SymDocumentWriter.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Pdb\SymWriter.cs" />
+    <Compile Include="Cecil\Mono.Cecil.PE\BinaryStreamReader.cs" />
+    <Compile Include="Cecil\Mono.Cecil.PE\BinaryStreamWriter.cs" />
+    <Compile Include="Cecil\Mono.Cecil.PE\ByteBuffer.cs" />
+    <Compile Include="Cecil\Mono.Cecil.PE\ByteBufferEqualityComparer.cs" />
+    <Compile Include="Cecil\Mono.Cecil.PE\DataDirectory.cs" />
+    <Compile Include="Cecil\Mono.Cecil.PE\Image.cs" />
+    <Compile Include="Cecil\Mono.Cecil.PE\ImageReader.cs" />
+    <Compile Include="Cecil\Mono.Cecil.PE\ImageWriter.cs" />
+    <Compile Include="Cecil\Mono.Cecil.PE\Section.cs" />
+    <Compile Include="Cecil\Mono.Cecil.PE\TextMap.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Rocks\Functional.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Rocks\ILParser.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Rocks\MethodBodyRocks.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Rocks\MethodDefinitionRocks.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Rocks\ModuleDefinitionRocks.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Rocks\ParameterReferenceRocks.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Rocks\SecurityDeclarationRocks.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Rocks\TypeDefinitionRocks.cs" />
+    <Compile Include="Cecil\Mono.Cecil.Rocks\TypeReferenceRocks.cs" />
+    <Compile Include="Cecil\Mono.Cecil\ArrayType.cs" />
+    <Compile Include="Cecil\Mono.Cecil\AssemblyDefinition.cs" />
+    <Compile Include="Cecil\Mono.Cecil\AssemblyFlags.cs" />
+    <Compile Include="Cecil\Mono.Cecil\AssemblyHashAlgorithm.cs" />
+    <Compile Include="Cecil\Mono.Cecil\AssemblyLinkedResource.cs" />
+    <Compile Include="Cecil\Mono.Cecil\AssemblyNameDefinition.cs" />
+    <Compile Include="Cecil\Mono.Cecil\AssemblyNameReference.cs" />
+    <Compile Include="Cecil\Mono.Cecil\AssemblyReader.cs" />
+    <Compile Include="Cecil\Mono.Cecil\AssemblyWriter.cs" />
+    <Compile Include="Cecil\Mono.Cecil\BaseAssemblyResolver.cs" />
+    <Compile Include="Cecil\Mono.Cecil\CallSite.cs" />
+    <Compile Include="Cecil\Mono.Cecil\CustomAttribute.cs" />
+    <Compile Include="Cecil\Mono.Cecil\DefaultAssemblyResolver.cs" />
+    <Compile Include="Cecil\Mono.Cecil\EmbeddedResource.cs" />
+    <Compile Include="Cecil\Mono.Cecil\EventAttributes.cs" />
+    <Compile Include="Cecil\Mono.Cecil\EventDefinition.cs" />
+    <Compile Include="Cecil\Mono.Cecil\EventReference.cs" />
+    <Compile Include="Cecil\Mono.Cecil\ExportedType.cs" />
+    <Compile Include="Cecil\Mono.Cecil\FieldAttributes.cs" />
+    <Compile Include="Cecil\Mono.Cecil\FieldDefinition.cs" />
+    <Compile Include="Cecil\Mono.Cecil\FieldReference.cs" />
+    <Compile Include="Cecil\Mono.Cecil\FileAttributes.cs" />
+    <Compile Include="Cecil\Mono.Cecil\FunctionPointerType.cs" />
+    <Compile Include="Cecil\Mono.Cecil\GenericInstanceMethod.cs" />
+    <Compile Include="Cecil\Mono.Cecil\GenericInstanceType.cs" />
+    <Compile Include="Cecil\Mono.Cecil\GenericParameter.cs" />
+    <Compile Include="Cecil\Mono.Cecil\GenericParameterAttributes.cs" />
+    <Compile Include="Cecil\Mono.Cecil\IConstantProvider.cs" />
+    <Compile Include="Cecil\Mono.Cecil\ICustomAttributeProvider.cs" />
+    <Compile Include="Cecil\Mono.Cecil\IGenericInstance.cs" />
+    <Compile Include="Cecil\Mono.Cecil\IGenericParameterProvider.cs" />
+    <Compile Include="Cecil\Mono.Cecil\IMarshalInfoProvider.cs" />
+    <Compile Include="Cecil\Mono.Cecil\IMemberDefinition.cs" />
+    <Compile Include="Cecil\Mono.Cecil\IMetadataScope.cs" />
+    <Compile Include="Cecil\Mono.Cecil\IMetadataTokenProvider.cs" />
+    <Compile Include="Cecil\Mono.Cecil\IMethodSignature.cs" />
+    <Compile Include="Cecil\Mono.Cecil\Import.cs" />
+    <Compile Include="Cecil\Mono.Cecil\LinkedResource.cs" />
+    <Compile Include="Cecil\Mono.Cecil\ManifestResourceAttributes.cs" />
+    <Compile Include="Cecil\Mono.Cecil\MarshalInfo.cs" />
+    <Compile Include="Cecil\Mono.Cecil\MemberDefinitionCollection.cs" />
+    <Compile Include="Cecil\Mono.Cecil\MemberReference.cs" />
+    <Compile Include="Cecil\Mono.Cecil\MetadataResolver.cs" />
+    <Compile Include="Cecil\Mono.Cecil\MetadataSystem.cs" />
+    <Compile Include="Cecil\Mono.Cecil\MethodAttributes.cs" />
+    <Compile Include="Cecil\Mono.Cecil\MethodCallingConvention.cs" />
+    <Compile Include="Cecil\Mono.Cecil\MethodDefinition.cs" />
+    <Compile Include="Cecil\Mono.Cecil\MethodImplAttributes.cs" />
+    <Compile Include="Cecil\Mono.Cecil\MethodReference.cs" />
+    <Compile Include="Cecil\Mono.Cecil\MethodReturnType.cs" />
+    <Compile Include="Cecil\Mono.Cecil\MethodSemanticsAttributes.cs" />
+    <Compile Include="Cecil\Mono.Cecil\MethodSpecification.cs" />
+    <Compile Include="Cecil\Mono.Cecil\Modifiers.cs" />
+    <Compile Include="Cecil\Mono.Cecil\ModuleDefinition.cs" />
+    <Compile Include="Cecil\Mono.Cecil\ModuleKind.cs" />
+    <Compile Include="Cecil\Mono.Cecil\ModuleReference.cs" />
+    <Compile Include="Cecil\Mono.Cecil\NativeType.cs" />
+    <Compile Include="Cecil\Mono.Cecil\ParameterAttributes.cs" />
+    <Compile Include="Cecil\Mono.Cecil\ParameterDefinition.cs" />
+    <Compile Include="Cecil\Mono.Cecil\ParameterDefinitionCollection.cs" />
+    <Compile Include="Cecil\Mono.Cecil\ParameterReference.cs" />
+    <Compile Include="Cecil\Mono.Cecil\PinnedType.cs" />
+    <Compile Include="Cecil\Mono.Cecil\PInvokeAttributes.cs" />
+    <Compile Include="Cecil\Mono.Cecil\PInvokeInfo.cs" />
+    <Compile Include="Cecil\Mono.Cecil\PointerType.cs" />
+    <Compile Include="Cecil\Mono.Cecil\PropertyAttributes.cs" />
+    <Compile Include="Cecil\Mono.Cecil\PropertyDefinition.cs" />
+    <Compile Include="Cecil\Mono.Cecil\PropertyReference.cs" />
+    <Compile Include="Cecil\Mono.Cecil\ReferenceType.cs" />
+    <Compile Include="Cecil\Mono.Cecil\Resource.cs" />
+    <Compile Include="Cecil\Mono.Cecil\SecurityDeclaration.cs" />
+    <Compile Include="Cecil\Mono.Cecil\SentinelType.cs" />
+    <Compile Include="Cecil\Mono.Cecil\TargetRuntime.cs" />
+    <Compile Include="Cecil\Mono.Cecil\TypeAttributes.cs" />
+    <Compile Include="Cecil\Mono.Cecil\TypeDefinition.cs" />
+    <Compile Include="Cecil\Mono.Cecil\TypeDefinitionCollection.cs" />
+    <Compile Include="Cecil\Mono.Cecil\TypeParser.cs" />
+    <Compile Include="Cecil\Mono.Cecil\TypeReference.cs" />
+    <Compile Include="Cecil\Mono.Cecil\TypeSpecification.cs" />
+    <Compile Include="Cecil\Mono.Cecil\TypeSystem.cs" />
+    <Compile Include="Cecil\Mono.Cecil\VariantType.cs" />
+    <Compile Include="Cecil\Mono.Collections.Generic\Collection.cs" />
+    <Compile Include="Cecil\Mono.Collections.Generic\ReadOnlyCollection.cs" />
+    <Compile Include="Cecil\Mono.CompilerServices.SymbolWriter\MonoSymbolFile.cs" />
+    <Compile Include="Cecil\Mono.CompilerServices.SymbolWriter\MonoSymbolTable.cs" />
+    <Compile Include="Cecil\Mono.CompilerServices.SymbolWriter\MonoSymbolWriter.cs" />
+    <Compile Include="Cecil\Mono.CompilerServices.SymbolWriter\SourceMethodBuilder.cs" />
+    <Compile Include="Cecil\Mono.CompilerServices.SymbolWriter\SymbolWriterImpl.cs" />
+    <Compile Include="Cecil\Mono.Security.Cryptography\CryptoConvert.cs" />
+    <Compile Include="Cecil\Mono.Security.Cryptography\CryptoService.cs" />
+    <Compile Include="Cecil\Mono\Empty.cs" />
+    <Compile Include="Cecil\System.Security.Cryptography\SHA1Managed.cs" />
+    <Compile Include="Documenters\DocGenerationOptions.cs" />
+    <Compile Include="AssembliesInfo.cs" />
+    <Compile Include="Documenters\Documenter.cs" />
+    <Compile Include="Documenters\HTMLDocumenter\HTMLDocumenter.cs" />
+    <Compile Include="Documenters\HTMLDocumenter\Icons.cs" />
+    <Compile Include="Documenters\ISummarisableMember.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="MyReflection\Attributes\MyEventAttributes.cs" />
+    <Compile Include="MyReflection\GenericConstraints\BuiltIntGenericConstraint.cs" />
+    <Compile Include="MyReflection\GenericConstraints\NakedTypeConstraint.cs" />
+    <Compile Include="MyReflection\GenericConstraints\TypeGenericConstraint.cs" />
+    <Compile Include="MyReflection\MetaClasses\ClassMembersGroups.cs" />
+    <Compile Include="MyReflection\GenericConstraints\GenericConstraint.cs" />
+    <Compile Include="MyReflection\MetaClasses\ExceptionDescr.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyGenericParameterInfo.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyInvokableMembersOverloadsInfo.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyPropertiesOverloadsInfo.cs" />
+    <Compile Include="MyReflection\MetaClasses\NamespaceMembersGroups.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyDelegateInfo.cs" />
+    <Compile Include="MyReflection\MetaClasses\MetaClass.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyAssemblyInfo.cs" />
+    <Compile Include="MyReflection\Attributes\MyClassAttributes.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyClassInfo.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyConstructorInfo.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyEnumerationInfo.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyEventInfo.cs" />
+    <Compile Include="MyReflection\Attributes\MyFieldAttributes.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyFieldInfo.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyInterfaceInfo.cs" />
+    <Compile Include="MyReflection\Attributes\MyInvokableMemberAttributes.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyInvokableMemberInfo.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyMethodInfo.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyNamespaceInfo.cs" />
+    <Compile Include="MyReflection\Attributes\MyParameterAttributes.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyNestedTypeInfo.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyParameterInfo.cs" />
+    <Compile Include="MyReflection\Attributes\MyPropertyAttributes.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyPropertyInfo.cs" />
+    <Compile Include="MyReflection\MetaClasses\MyStructureInfo.cs" />
+    <Compile Include="MyReflection\MetaClasses\NestedTypes.cs" />
+    <Compile Include="MyReflection\Tools.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\Contents.css" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\TableOfContents.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\Common.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\Assembly.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\EnumField.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\Namespace.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedClass.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedDelegate.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedEnumeration.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedEvent.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedField.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedInterface.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedMethod.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedProperty.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedStructure.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PublicClass.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PublicDelegate.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PublicEnumeration.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PublicEvent.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PublicField.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PublicInterface.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PublicMethod.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PublicProperty.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PublicStructure.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\Static.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\Virtual.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\None.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\BigSquareCollapsed.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\BigSquareExpanded.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\SmallSquareCollapsed.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\SmallSquareExpanded.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\TV_Minus.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\TV_Null.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\TV_Plus.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\TV_VerticalDots.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\TableOfContentsTemplate.html" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\IndexTemplate.html" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\TreeView.css" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\TreeView.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\ImmJSLib.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\LeftArrow.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\RightArrow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\Abstract.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\Lists.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\InternalClass.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\InternalDelegate.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\InternalEnumeration.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\InternalEvent.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\InternalField.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\InternalInterface.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\InternalMethod.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\InternalProperty.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\InternalStructure.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PrivateClass.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PrivateDelegate.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PrivateEnumeration.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PrivateEvent.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PrivateField.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PrivateInterface.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PrivateMethod.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PrivateProperty.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\PrivateStructure.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedInternalClass.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedInternalDelegate.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedInternalEnumeration.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedInternalEvent.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedInternalField.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedInternalInterface.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedInternalMethod.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedInternalProperty.gif" />
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\GFX\ProtectedInternalStructure.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documenters\HTMLDocumenter\Res\ClassLibrary.csv.gz" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cecil" />
+    <Folder Include="Cecil\Microsoft.Cci.Pdb" />
+    <Folder Include="Cecil\Mono" />
+    <Folder Include="Cecil\Mono.Cecil" />
+    <Folder Include="Cecil\Mono.Cecil.Cil" />
+    <Folder Include="Cecil\Mono.Cecil.Mdb" />
+    <Folder Include="Cecil\Mono.Cecil.Metadata" />
+    <Folder Include="Cecil\Mono.Cecil.Pdb" />
+    <Folder Include="Cecil\Mono.Cecil.PE" />
+    <Folder Include="Cecil\Mono.Cecil.Rocks" />
+    <Folder Include="Cecil\Mono.Collections.Generic" />
+    <Folder Include="Cecil\Mono.CompilerServices.SymbolWriter" />
+    <Folder Include="Cecil\Mono.Security.Cryptography" />
+    <Folder Include="Cecil\System.Security.Cryptography" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cecil\Microsoft.Cci.Pdb\LICENSE" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
